@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespeare Speaks</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            
+        }
+        .header{
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            color: rgb(184, 13, 236);
+            font-size: 1.9rem;
+            font-family:  monospace;
+        }
+        
+        .normie-txt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        #normie{
+            height:20vh;
+            width:50%;
+            border: .5px solid black;
+            opacity: 1;
+            padding:1rem;
+            margin:3rem;
+        }
+        #normie-to-shakespearean{
+            padding:1rem 2rem;
+            background-color: rgb(184, 13, 236);
+            border:1px solid white;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            font-family:  monospace;
+            cursor: pointer;
+        }
+        .shakespearean-txt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #shakespearean{
+            height:20vh;
+            width:50%;
+            border: 2px solid white;
+            box-shadow: 1px 0px 5px purple;
+            padding:1rem;
+            margin:3rem;
+        }
+        .footer{
+            height: 10rem;
+            background-color: rgb(184, 13, 236);
+            color: white;
+            font-size: 1.9rem;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            font-family:  monospace;
+        }
+        p{
+            font-size: .8rem;
+            font-family:  monospace;
+            width:60%;
+            
+        }
+        span{
+            color:black;
+        }
+        h2{
+            color:rgb(184, 13, 236);
+            font-family:  monospace;
+            font-size:1rem;
+        }
+        hr{
+            width:60%;
+            
+           
+        }
+        .line{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .text{
+            width:60%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><span>Shakespeare</span> Translator</h1>
+    </div>
+    <div class="line">
+    <hr>
+    </div>
+    
+    <div class="normie-txt">
+        <textarea id="normie" placeholder="Write your message here!" id="" cols="30" rows="10"></textarea>
+        </textarea>
+        <br>
+        <button id="normie-to-shakespearean">Translate</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="shakespearean-txt">
+        <div class="text">
+        <h2>Shakespearean Language will be displayed here!</h2>
+        </div>
+        <div id="shakespearean">
+        </div>
+    </div>
+    <div class="footer">
+        <h3>About Shakespeare<span>.</span></h3>
+    <p>William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English playwright,
+         poet, and actor, widely regarded as the greatest writer in the English language
+          and the world's greatest dramatist.
+        Use this App to convert to Early Modern English.</p>
+    </div>
+    
+    <script src="app.js">
+
+    </script>
+</body>
+</html>
